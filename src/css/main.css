@@ -1,0 +1,227 @@
+body {
+/*
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+*/
+  font-family: Arial;
+  background-color:  #334;
+}
+
+a{ 
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+ li {
+    list-style-type: none; /* Убираем маркеры */
+    height: 100%;
+    padding-bottom: 20px;
+   }
+ul {
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    margin-top: 5px; 
+   } 
+/* и задаем абсолютное позиционирование */
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #BFE1DA;
+}
+
+/* отображаем выпадающий список при наведении */
+ul li:hover > ul {
+    display:inherit;
+
+
+}
+
+/* первый уровень выпадающего списка */
+ul ul li {
+    position: absolute;
+    list-style-type: none;
+    margin-top: -7px;
+    margin-left: 10px;
+    z-index: 3;
+}
+.parent {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: #D0F9DE;
+}
+
+.company-logo {
+  position: absolute;
+  width: 25%;
+  left: 0%;
+  right: 75%;
+  text-align: center;
+  height: 30px;
+  background-color: #BFE1DA;
+}
+
+.fixheader {
+  position: absolute;
+  width: 75px;
+  left: 155px;
+  text-align: center;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #BFE1DA;
+}
+
+.header-content {
+  position: absolute;
+  width: 100%;
+  top: 4px;
+  left: 0%;
+  height: 90%;
+  background-color: #BFE1DA;
+}
+
+.header {
+  position: absolute;
+  width: calc(108% - 400px);
+  left: 233px;
+  right: 40%;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: midle;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #BFE1DA;
+
+}
+
+.login {
+  position: absolute;
+  width: 75px;
+  right: 0%;
+  text-align: center;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #BFE1DA;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  text-align: center;
+  color: #3b6484;
+  height: 50px;
+  background-color: #D0F9DE;
+}
+
+.subtitle {
+  
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+  color: #3b6484;
+  height: 50px;
+  background-color: #D0F9DE;
+}
+
+
+.course-category {
+  position: absolute;
+  width: 100%;
+  top: 275px;
+  text-align: center;
+  color: #3b6484;
+  height: 50px;
+  background-color: #BFE1DA;
+}
+
+ul.hr {
+    margin-top: 0px; /* Обнуляем значение отступов */
+    padding: 0px; /* Значение полей */
+   }
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+/*
+    border: 1px solid #000;  Рамка вокруг текста 
+*/
+    padding: 20px; /* Поля вокруг текста */
+   }
+
+.footer{
+  height: 50px;
+  bottom: 0;
+}
+
+.push{
+  height: 0px;
+  bottom: 0;
+}
+
+.about {
+
+  width: 100%;
+  bottom: 25px;
+  text-align: center;
+  color: #3b6484;
+  height: 50px;
+  background-color: #BFE1DA;
+}
+
+.bottom {
+  width: 100%;
+  right: 0px;
+  bottom: 0;
+  text-align: right;
+  height: 25px;
+  background-color: #D0F9DE;  
+}
+
+.panel {
+  width: 153px;
+  height: 30px;
+  left: 0%;
+  background: #fff;
+  
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  
+  position: absolute;
+}
+
+.content-index {
+  position: relative;
+  width: 100%;
+  color: #3b6484;
+  padding: 0px;
+  height: 50%;
+  margin: 0 auto 40px;
+  margin-bottom: 310px; 
+  top: 310px;
+  background-color: #D0F9DE;
+  
+}
+
+img {
+  max-width: none;
+  
+  min-width: auto;
+  min-height: auto;
+  
+  height: 100%;
+  
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+.inner-text{
+ padding-top: 5%; 
+}
